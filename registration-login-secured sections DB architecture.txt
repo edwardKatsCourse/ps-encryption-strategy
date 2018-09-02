@@ -1,0 +1,43 @@
+USER
+ID | FIRST_NAME | LAST_NAME | EMAIL | GOV_ID | CREATED_DATE | UPDATED_DATE
+
+
+USER_INFO
+ID | USER_ID | ADDRESS | DATE_OF_BIRTH | CREATED_DATE | UPDATED_DATE
+
+
+USER_IMAGE
+ID | IMAGE_BLOB/IMAGE_BASE_64 | USER_ID | CREATED_DATE | UPDATED_DATE
+
+
+
+USER_CREDENTIALS
+ID | USER_ID | PASSWORD_HASH | SALT | CREATED_DATE | UPDATED_DATE
+
+
+user   password		super algorithm processing		salt		backend salt		password hash
+1 ->    123456 ->     		abcdef			+		987654		 zyxwvutsrq		 fh872h87h328fh827
+2 ->    123456 -> 			abcdef			+		123456		 zyxwvutsrq		 askjdhajkehfkjeui
+
+
+49c69ef52e60c43bf7022c817ddd88a1
+49c69ef52e60c43bf7022c817ddd88a1 -> salt
+
+4fc63ed662f2d02d6338899457d7f16a -> salt`
+
+
+
+USER_SESSION
+ID | SESSION_ID 							| USER_ID | IS_VALID   | CREATED_DATE | UPDATED_DATE 
+1	 MV91c2VyQGdtYWlsLmNvbToxX3F3ZXJ0eQ==       1	     	0 		  1535916608			
+
+														1 - login
+														0 - logout
+
+Content-Type : application/json
+Authorization: MV91c2VyQGdtYWlsLmNvbToxX3F3ZXJ0eQ==
+
+
+
+
+
